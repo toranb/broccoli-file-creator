@@ -1,0 +1,42 @@
+{
+  "name": "broccoli-file-creator",
+  "version": "0.1.0",
+  "description": "Broccoli plugin to create a file.",
+  "main": "index.js",
+  "author": {
+    "name": "Robert Jackson"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rjackson/broccoli-file-creator.git"
+  },
+  "scripts": {
+    "test": "mocha tests/"
+  },
+  "keywords": [
+    "broccoli-plugin",
+    "javascript"
+  ],
+  "dependencies": {
+    "mkdirp": "^0.3.5",
+    "quick-temp": "^0.1.0"
+  },
+  "devDependencies": {
+    "broccoli": "~0.9.0",
+    "expect.js": "~0.3.1",
+    "mocha": "~1.18.2",
+    "sinon": "^1.10.2"
+  },
+  "gitHead": "e87b59956c3148adebf8ce9205d2c4271f6a1d52",
+  "readme": "# Broccoli's File Creator\n\n[![Build Status](https://travis-ci.org/rjackson/broccoli-file-creator.svg?branch=master)](https://travis-ci.org/rjackson/broccoli-file-creator)\n\n## Usage\n\nCreate a file named `app/main.js` with \"some content goes here\":\n\n```javascript\nvar writeFile = require('broccoli-file-creator');\n\nvar tree = writeFile('/app/main.js', 'some content goes here');\n```\n\n## Documentation\n\n### `writeFile(filename, content, fileOptions)`\n\n---\n\n`filename` *{String}*\n\nThe path of the file to create.\n\n---\n\n`content` *{String}*\n\nThe contents to write into the file.\n\n## ZOMG!!! TESTS?!?!!?\n\nI know, right?\n\nRunning the tests:\n\n```javascript\nnpm install\nnpm test\n```\n\n## License\n\nThis project is distributed under the MIT license.\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/rjackson/broccoli-file-creator/issues"
+  },
+  "homepage": "https://github.com/rjackson/broccoli-file-creator#readme",
+  "_id": "broccoli-file-creator@0.1.0",
+  "_shasum": "1c2a983d5f840146136b67386db7f624b6dc6a64",
+  "_from": "git+https://github.com/jenseng/broccoli-file-creator.git#e87b59956c3148adebf8ce9205d2c4271f6a1d52",
+  "_resolved": "git+https://github.com/jenseng/broccoli-file-creator.git#e87b59956c3148adebf8ce9205d2c4271f6a1d52"
+}
